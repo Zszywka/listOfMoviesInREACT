@@ -30,8 +30,8 @@ var movies = [
 ];
 
 var movieElements = movies.map(function(movie) {
-  return React.createElement('li', {key: movie.id}, // dlaczego return? // dlaczego taki zapis movie.id?
-    React.createElement('img', {src: movie.img}), // why scr inside {}?
+  return React.createElement('li', {key: movie.id}, 
+    React.createElement('img', {src: movie.img}),
     React.createElement('h2', {}, movie.title),
     React.createElement('p', {}, movie.desc),
     React.createElement('a', {href: movie.video}, 'Triler' )
